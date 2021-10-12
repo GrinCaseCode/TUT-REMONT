@@ -19,7 +19,9 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 }
 
 	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+	$(".sidebar-nav li a, .btn-main_scroll").mPageScroll2id({
+		offset: 30
+	});
 
 
 	//кнопка sandwich
@@ -49,11 +51,54 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).siblings("ul").slideToggle(200);
 	});
 
+	$(".item-sidebar__head").click(function() {
+		$(this).parent().toggleClass("active");
+		$(this).siblings(".item-sidebar__content").slideToggle(200);
+	});
 
-$(".unit__head").click(function(e) {
+
+	$(".btn-main_filter").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");  
+		if ($(".filters-mobile .item-sidebar_filter").is(":hidden")) {
+			$(".filters-mobile .item-sidebar_filter").slideDown(200);
+			$(this).find("span").text("Свернуть фильтр");
+		} else {
+			$(".filters-mobile .item-sidebar_filter").slideUp(200);
+			$(this).find("span").text("Показать фильтр");	
+		}
+	});
+
+
+  /*input file*/
+  $("input[type='file']").change(function(){
+    var filename_text = $(this).parent().siblings(".name-upload");
+    var filename = $(this).val().replace(/.*\\/, "");
+    filename_text.append("<div>" + filename + "</div>");
+  });
+
+
+	$(".unit__head").click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
-		$(".unit__content").slideToggle(200);
+		$(this).siblings(".unit__content").slideToggle(200);
+	});
+
+	$(".arrow-main_review").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).parent().parent().parent().find(".card-review_answer").slideToggle(200);
+	});
+
+	$(".rating__item").click(function() {
+		$(this).parent().removeClass("rating_1");
+		$(this).parent().removeClass("rating_2");
+		$(this).parent().removeClass("rating_3");
+		$(this).parent().removeClass("rating_4");
+		$(this).parent().removeClass("rating_5");
+		var rating = $(this).attr("data-rating");
+		$(this).parent().addClass("rating_" + rating);
+		$(this).parent().siblings(".ratting-estimate__value").html("Ваша оценка " + rating + " из 5");
 	});
 
 	$(".item-question__head").click(function() {
@@ -80,6 +125,25 @@ $(".unit__head").click(function(e) {
 				infinite: false,
 				slidesPerRow: 2,
 				rows: 2,
+			}
+		}
+		]
+	});
+
+	$('.slider-images').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 4,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.5 4.5C13.472 4.5 4.5 13.472 4.5 24.5C4.5 35.528 13.472 44.5 24.5 44.5C35.528 44.5 44.5 35.528 44.5 24.5C44.5 13.472 35.528 4.5 24.5 4.5ZM24.5 7.5C33.874 7.5 41.5 15.126 41.5 24.5C41.5 33.874 33.874 41.5 24.5 41.5C15.126 41.5 7.5 33.874 7.5 24.5C7.5 15.126 15.126 7.5 24.5 7.5ZM26.3248 16.4954L19.3528 23.4374C19.0708 23.7194 18.9128 24.1014 18.9128 24.4994C18.9128 24.8994 19.0708 25.2814 19.3528 25.5634L26.3248 32.5034C26.6168 32.7954 27.0008 32.9414 27.3828 32.9414C27.7668 32.9414 28.1528 32.7954 28.4448 32.4994C29.0288 31.9114 29.0268 30.9634 28.4408 30.3794L22.5368 24.4994L28.4408 18.6214C29.0268 18.0374 29.0288 17.0874 28.4448 16.4994C27.8608 15.9094 26.9128 15.9134 26.3248 16.4954Z" fill="#6AC48A"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 4.5C35.028 4.5 44 13.472 44 24.5C44 35.528 35.028 44.5 24 44.5C12.972 44.5 4 35.528 4 24.5C4 13.472 12.972 4.5 24 4.5ZM24 7.5C14.626 7.5 7 15.126 7 24.5C7 33.874 14.626 41.5 24 41.5C33.374 41.5 41 33.874 41 24.5C41 15.126 33.374 7.5 24 7.5ZM22.1752 16.4954L29.1472 23.4374C29.4292 23.7194 29.5872 24.1014 29.5872 24.4994C29.5872 24.8994 29.4292 25.2814 29.1472 25.5634L22.1752 32.5034C21.8832 32.7954 21.4992 32.9414 21.1172 32.9414C20.7332 32.9414 20.3472 32.7954 20.0552 32.4994C19.4712 31.9114 19.4732 30.9634 20.0592 30.3794L25.9632 24.4994L20.0592 18.6214C19.4732 18.0374 19.4712 17.0874 20.0552 16.4994C20.6392 15.9094 21.5872 15.9134 22.1752 16.4954Z" fill="#6AC48A"/></svg><div/>',
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				infinite: false,
+				slidesToShow: 1,
 			}
 		}
 		]
@@ -151,11 +215,44 @@ $(".unit__head").click(function(e) {
 		]
 	});
 
+	$(".item-catalog .btn-open").click(function(e) {
+		e.preventDefault();
+		$('.slider-images').slick('refresh');
+		$(this).toggleClass("active");
+		if ($(this).siblings(".item-catalog__hiddenmob").is(":hidden")) {
+			$(this).siblings(".item-catalog__hiddenmob").fadeIn(200);
+			$(this).find(".btn-open__icon + span").text("Свернуть");
+		} else {
+			$(this).siblings(".item-catalog__hiddenmob").fadeOut(200);
+			$(this).find(".btn-open__icon + span").text("Подробнее");
+		}
+	});
+
+		var w = 0;
+
+	$(".btn-main_next").click(function(e) {
+		e.preventDefault();
+		w = w + 25;
+		$(".quiz-progressbar__value").css("width", w + "%");
+		$(".progressbar-numbers__item.active").next().addClass("active");
+		$(this).parent().parent().fadeOut(0);
+		$(this).parent().parent().next(".tab-quiz").fadeIn(200);
+	});
+
+	$(".btn-main_prev").click(function(e) {
+		e.preventDefault();
+		w = w - 25;
+		$(".quiz-progressbar__value").css("width", w + "%");
+		$(".progressbar-numbers__item.active").last().removeClass("active");
+		$(this).parent().parent().fadeOut(0);
+		$(this).parent().parent().prev(".tab-quiz").fadeIn(200);
+	});
+
 	$(window).resize(function () {
-    if ($(window).width() < 992) {
-      $('.row_advantages').slick('refresh');
-    }
-  })
+		if ($(window).width() < 992) {
+			$('.row_advantages').slick('refresh');
+		}
+	})
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
@@ -170,11 +267,11 @@ $(".unit__head").click(function(e) {
 	$(".fancybox").fancybox();
 
 	$(".fancybox-main").fancybox({
-  beforeShow : function(){
-    $(".fancybox-skin").addClass("modal-fancybox");
-    
-  }
-});
+		beforeShow : function(){
+			$(".fancybox-skin").addClass("modal-fancybox");
+			
+		}
+	});
 
 
 	//Кнопка "Наверх"
