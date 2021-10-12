@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.2" />
+	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="buttons-mobile">
+			<a href="#modal-type" class="btn-mobile fancybox"><img src="img/ic_type.svg" alt="alt"></a>
+			<a href="#modal-set" class="btn-mobile fancybox"><img src="img/ic_set.svg" alt="alt"></a>
+			<a href="#" class="btn-mobile btn-mobile_search"><img src="img/ic_btn1.svg" alt="alt"></a>
+			<a href="#modal-add" class="btn-mobile fancybox"><img src="img/ic_plus.svg" alt="alt"></a>
+			<a href="#modal-city" class="btn-mobile fancybox"><img src="img/ic_location.svg" alt="alt"></a>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<a href="#" class="btn-icon btn-icon_menu">
+						<img src="img/ic_menu.svg" alt="alt">
+					</a>
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<a href="#modal-city" class="city-link fancybox"><span class="city-link__icon"></span>Ваш город: <span class="city-link__value">Минск</span><span class="arrow-main"></span></a>
+					<a href="#modal-type" class="link-type fancybox"><span class="link-type__icon"></span>Все виды техники<span class="arrow-main"></span></a>
+					<a href="#modal-set" class="btn-main btn-main_set fancybox"><span class="icon-btn"></span>Создать заявку на ремонт</a>
+					<a href="#modal-add" class="btn-main btn-main_add fancybox"><span class="icon-btn"></span>Добавить свой центр</a>
+					<div class="header__contacts">
+						<a href="tel:+74999386507" class="phone-main">+7 (499) 938-65-07</a>
+						<p>Ежедневно с 6:00 до 23:00</p>
+					</div>
+					<a href="#" class="btn-icon">
+						<img src="img/ic_tel.svg" alt="alt">
+					</a>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="menu-mobile__list">
+					<li><a href="#"><span class="menu-mobile__icon"><img src="img/ic_menu1.svg" alt="alt"></span>Все услуги</a></li>
+					<li><a href="#"><span class="menu-mobile__icon"><img src="img/ic_menu2.svg" alt="alt"></span>Новости</a></li>
+					<li><a href="#"><span class="menu-mobile__icon"><img src="img/ic_menu3.svg" alt="alt"></span>Акции</a></li>
+					<li><a href="#"><span class="menu-mobile__icon"><img src="img/ic_menu4.svg" alt="alt"></span>Контакты</a></li>
+					<li><a href="#"><span class="menu-mobile__icon"><img src="img/ic_menu5.svg" alt="alt"></span>Вход / Регистрация</a></li>
+				</ul>
+			</div>
+			<div class="moble-search">
+				<form>
+					<div class="item-form">
+						<input type="text" placeholder="Поиск по сайту" required="required">
+					</div>
+					<button class="btn-icon">
+						<img src="img/ic_btn1.svg" alt="alt">
+					</button>
+				</form>
+			</div>
+		</header>
+
+		<div class="categories">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li>Каталог</li>
+				</ul>
+				<div class="row">
+					<div class="col-lg-3 flex_min">
+						<div class="item-sidebar">
+							<div class="item-sidebar__head"><img src="img/ic_sidebar1.svg" alt="alt">Контакты сервиса <div class="arrow-main"></div></div>
+							<div class="item-sidebar__content">
+								<div class="item-sidebar__wrap">
+									<p><a href="mailto:info@apple-service.care">info@apple-service.care</a></p>
+									<p><a href="tel:+74957894771">+7 (495) 789-47-71</a></p>
+									<p><a href="mailto:horoshiyservice.com">horoshiyservice.com</a></p>
+									<p>Кулакова, 20 ст1а, Технопарк <br>Орбита, 406 офис; 4 этаж <br><a href="#">Показать на карте</a></p>
+									<p><a href="#">Работает сегодня до 23:00</a></p>
+									<a href="#" class="btn-main"><img src="img/ic_hand.svg" alt="alt">Онлайн заявка</a>
+								</div>
+							</div>
+						</div>
+						<div class="item-sidebar">
+							<div class="item-sidebar__head"><img src="img/ic_sidebar2.svg" alt="alt">Виды техники <div class="arrow-main"></div></div>
+							<div class="item-sidebar__content">
+								<ul class="list-unit">
+									<li class="active"><a href="#">компьютерная техника</a></li>
+									<li><a href="#">Крупная бытовая техника</a></li>
+									<li><a href="#">мелкая  бытовая техника</a></li>
+									<li><a href="#">портативная электроника</a></li>
+									<li><a href="#"> фото и видео техника</a></li>
+									<li><a href="#">техника для красоты</a></li>
+									<li><a href="#">климатическая техника</a></li>
+									<li><a href="#">электроинструменты</a></li>
+								</ul>
+								<div class="more-types">
+									<p><a href="#">Показать еще</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="item-sidebar">
+							<div class="item-sidebar__head"><img src="img/ic_sidebar3.svg" alt="alt">Бренды <div class="arrow-main"></div></div>
+							<div class="item-sidebar__content">
+								<ul class="list-unit">
+									<li><a href="#">Acer</a></li>
+									<li class="active"><a href="#">Apple iMac</a></li>
+									<li><a href="#">Asus</a></li>
+									<li><a href="#">Dell</a></li>
+									<li><a href="#">Fujitsu</a></li>
+									<li><a href="#">HP</a></li>
+								</ul>
+								<div class="more-types">
+									<p><a href="#">Показать еще</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="item-sidebar">
+							<div class="item-sidebar__head"><img src="img/ic_sidebar2.svg" alt="alt">Фильтры <div class="arrow-main"></div></div>
+							<div class="item-sidebar__content">
+								<div class="item-sidebar__wrap">
+									<div class="title-sidebar"><img src="img/ic_title1.svg" alt="alt">метро</div>
+								</div>
+								<form>
+									<div class="search-unit">
+										<div class="item-input">
+											<input type="text" required="required">
+										</div>
+										<button class="btn-search"></button>
+									</div>
+								</form>
+								<div class="item-sidebar__wrap">
+									<div class="title-sidebar"><img src="img/ic_title2.svg" alt="alt">режим работы</div>
+									<div class="checkbox checkbox-main">
+										<label>
+											<input type="checkbox" checked />
+											<span>Круглосуточно</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox-main">
+										<label>
+											<input type="checkbox"/>
+											<span>Открыто сейчас</span>
+										</label>
+									</div>
+								</div>
+								<div class="item-sidebar__wrap wrap-line">
+									<div class="title-sidebar"><img src="img/ic_title3.svg" alt="alt">оплата</div>
+									<div class="checkbox checkbox-main">
+										<label>
+											<input type="checkbox" checked />
+											<span>Наличными</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox-main">
+										<label>
+											<input type="checkbox"/>
+											<span>Картой</span>
+										</label>
+									</div>
+								</div>
+								<div class="item-sidebar__wrap wrap-line">
+									<div class="title-sidebar"><img src="img/ic_title4.svg" alt="alt">другие услуги</div>
+									<div class="checkbox checkbox-main">
+										<label>
+											<input type="checkbox" />
+											<span>Выезд мастера</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox-main">
+										<label>
+											<input type="checkbox" checked/>
+											<span>Бесплатная диагностика</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox-main">
+										<label>
+											<input type="checkbox"/>
+											<span>Срочный ремонт</span>
+										</label>
+									</div>
+								</div>
+								<div class="item-sidebar__wrap">
+									<button class="btn-main"><img src="img/ic_filter.svg" alt="alt">Применить фильтр</button>
+									<button class="btn-main btn-main_clear"><img src="img/ic_clear.svg" alt="alt">Сбросить фильтр</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 flex_big">
+						<div class="title-section">Ремонт и обслуживание техники в Минске</div>
+						<div class="unit">
+							<div class="unit__head"><div class="title-min">Все виды техникии</div><div class="arrow-main"></div></div>
+							<div class="unit__content">
+								<form>
+									<div class="search-unit">
+										<div class="item-input">
+											<input type="text" placeholder="Поиск по услугам" required="required">
+										</div>
+										<button class="btn-search"></button>
+									</div>
+								</form>
+								<div class="list-unit-wrap">
+									<ul class="list-unit">
+										<li class="active"><a href="#">компьютерная техника</a></li>
+										<li><a href="#">Крупная бытовая техника</a></li>
+										<li><a href="#">мелкая  бытовая техника</a></li>
+										<li><a href="#">портативная электроника</a></li>
+										<li><a href="#"> фото и видео техника</a></li>
+										<li><a href="#">техника для красоты</a></li>
+										<li><a href="#">климатическая техника</a></li>
+										<li><a href="#">электроинструменты</a></li>
+										<li><a href="#">часы</a></li>
+										<li><a href="#">авто техника</a></li>
+										<li><a href="#">швейное оборудование</a></li>
+										<li><a href="#">офисная и оргтехника</a></li>
+										<li><a href="#">отопление и вентиляция</a></li>
+										<li><a href="#">садовая техника</a></li>
+										<li><a href="#">строительная техника</a></li>
+										<li><a href="#">строительная техника</a></li>
+										<li><a href="#">Электрика</a></li>
+										<li><a href="#">медицинские приборы</a></li>
+										<li><a href="#">оптические приборы</a></li>
+										<li><a href="#">электротранспорт</a></li>
+										<li><a href="#">музыкальные инструменты</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="tags-wrap tags-wrap_main">
+							<a href="#" class="active">Цифровая техника</a>
+							<a href="#">Крупная бытовая техника</a>
+							<a href="#">Мелкая бытовая техника</a>
+							<a href="#">Фото-видео техника</a>
+							<a href="#">Электро инструмент</a>
+							<a href="#">Авто техника</a>
+							<a href="#" class="all-tags">Вся техника</a>
+						</div>
+						<div class="filters-mobile">
+							<div class="item-sidebar">
+								<div class="item-sidebar__head"><img src="img/ic_sidebar3.svg" alt="alt">Бренды <div class="arrow-main"></div></div>
+								<div class="item-sidebar__content">
+									<ul class="list-unit">
+										<li><a href="#">Acer</a></li>
+										<li class="active"><a href="#">Apple iMac</a></li>
+										<li><a href="#">Asus</a></li>
+										<li><a href="#">Dell</a></li>
+										<li><a href="#">Fujitsu</a></li>
+										<li><a href="#">HP</a></li>
+									</ul>
+									<div class="more-types">
+										<p><a href="#">Показать еще</a></p>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn-main btn-main_filter"><img src="img/ic_filter.svg" alt="alt"><span>Показать фильтр</span></a>
+							<div class="item-sidebar active item-sidebar_filter">
+								<div class="item-sidebar__head"><img src="img/ic_sidebar2.svg" alt="alt">Фильтры <div class="arrow-main"></div></div>
+								<div class="item-sidebar__content">
+									<div class="item-sidebar__wrap">
+										<div class="title-sidebar"><img src="img/ic_title1.svg" alt="alt">метро</div>
+									</div>
+									<form>
+										<div class="search-unit">
+											<div class="item-input">
+												<input type="text" required="required">
+											</div>
+											<button class="btn-search"></button>
+										</div>
+									</form>
+									<div class="item-sidebar__wrap">
+										<div class="title-sidebar"><img src="img/ic_title2.svg" alt="alt">режим работы</div>
+										<div class="checkbox checkbox-main">
+											<label>
+												<input type="checkbox" checked />
+												<span>Круглосуточно</span>
+											</label>
+										</div>
+										<div class="checkbox checkbox-main">
+											<label>
+												<input type="checkbox"/>
+												<span>Открыто сейчас</span>
+											</label>
+										</div>
+									</div>
+									<div class="item-sidebar__wrap wrap-line">
+										<div class="title-sidebar"><img src="img/ic_title3.svg" alt="alt">оплата</div>
+										<div class="checkbox checkbox-main">
+											<label>
+												<input type="checkbox" checked />
+												<span>Наличными</span>
+											</label>
+										</div>
+										<div class="checkbox checkbox-main">
+											<label>
+												<input type="checkbox"/>
+												<span>Картой</span>
+											</label>
+										</div>
+									</div>
+									<div class="item-sidebar__wrap wrap-line">
+										<div class="title-sidebar"><img src="img/ic_title4.svg" alt="alt">другие услуги</div>
+										<div class="checkbox checkbox-main">
+											<label>
+												<input type="checkbox" />
+												<span>Выезд мастера</span>
+											</label>
+										</div>
+										<div class="checkbox checkbox-main">
+											<label>
+												<input type="checkbox" checked/>
+												<span>Бесплатная диагностика</span>
+											</label>
+										</div>
+										<div class="checkbox checkbox-main">
+											<label>
+												<input type="checkbox"/>
+												<span>Срочный ремонт</span>
+											</label>
+										</div>
+									</div>
+									<div class="item-sidebar__wrap">
+										<button class="btn-main"><img src="img/ic_filter.svg" alt="alt">Применить фильтр</button>
+										<button class="btn-main btn-main_clear"><img src="img/ic_clear.svg" alt="alt">Сбросить фильтр</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row row_categories">
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category1.svg" alt="alt">
+									</span>
+									<span class="title-min">Телефоны и планшеты</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category2.svg" alt="alt">
+									</span>
+									<span class="title-min">Холодильники</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category3.svg" alt="alt">
+									</span>
+									<span class="title-min">Стиральные машины</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category4.svg" alt="alt">
+									</span>
+									<span class="title-min">Портативные гаджеты</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category5.svg" alt="alt">
+									</span>
+									<span class="title-min">Компьютеры</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category6.svg" alt="alt">
+									</span>
+									<span class="title-min">Ноутбуки</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category7.svg" alt="alt">
+									</span>
+									<span class="title-min">Мелкая бытовая техника</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category8.svg" alt="alt">
+									</span>
+									<span class="title-min">Электроинструмент</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category5.svg" alt="alt">
+									</span>
+									<span class="title-min">Компьютеры</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category6.svg" alt="alt">
+									</span>
+									<span class="title-min">Ноутбуки</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category7.svg" alt="alt">
+									</span>
+									<span class="title-min">Мелкая бытовая техника</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category8.svg" alt="alt">
+									</span>
+									<span class="title-min">Электроинструмент</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category5.svg" alt="alt">
+									</span>
+									<span class="title-min">Компьютеры</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category6.svg" alt="alt">
+									</span>
+									<span class="title-min">Ноутбуки</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category7.svg" alt="alt">
+									</span>
+									<span class="title-min">Мелкая бытовая техника</span>
+								</a>
+							</div>
+							<div class="col-lg-3">
+								<a href="#" class="item-category">
+									<span class="icon-block">
+										<img src="img/ic_category8.svg" alt="alt">
+									</span>
+									<span class="title-min">Электроинструмент</span>
+								</a>
+							</div>
+						</div>
+						<div class="more-button">
+							<a href="#" class="btn-main btn-main_simple">Показать еще</a>
+						</div>
+						<div class="consultation-block consultation-block_search">
+							<div class="title-section">Поиск сервисного центра поблизости</div>
+							<div class="descr-section">Мы стараемся показывать вам сервисы, которые находятся ближе всего к вам. <br>Это поможет в скорости получения услуги</div>
+							<form>
+								<div class="wrap-form">
+									<div class="item-form">
+										<select>
+											<option value="1">Город</option>
+											<option value="1">Минск</option>
+											<option value="1">Гродно</option>
+											<option value="1">Гродно</option>
+											<option value="1">Минск</option>
+											<option value="1">Гродно</option>
+											<option value="1">Гродно</option>
+											<option value="1">Минск</option>
+											<option value="1">Гродно</option>
+											<option value="1">Гродно</option>
+										</select>
+									</div>
+									<div class="item-form">
+										<select>
+											<option value="1">Вид техники</option>
+											<option value="1">Вид техники</option>
+											<option value="1">Вид техники</option>
+											<option value="1">Вид техники</option>
+										</select>
+									</div>
+									<button class="btn-main btn-main_map"><span class="icon-btn"></span>Показать центры на карте</button>
+								</div>
+							</form>
+						</div>
+						<div class="result-map">
+							<p>Найдено 35 сервисов поблизости</p>
+							<div class="row">
+								<div class="col-lg-7">
+									<div class="wrap-results">
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result1.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result2.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result3.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result4.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result5.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result1.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result2.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result3.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result4.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div class="item-result">
+											<a href="#" class="item-result__image">
+												<img src="img/itm_result5.jpg" alt="alt">
+											</a>
+											<div class="item-result__content">
+												<a href="#" class="title-min">“Хороший сервис”</a>
+												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+												<div class="rating-wrap">
+													<div class="rating rating_5">
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+														<div class="rating__item"><i class="fas fa-star"></i></div>
+													</div>
+													<div>4,7</div>
+												</div>
+											</div>
+											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+									</div>
+									<div class="more-button">
+										<a href="#" class="btn-main btn-main_simple">Показать еще</a>
+									</div>
+								</div>
+								<div class="col-lg-5">
+									<div id="map-result" class="map-result"></div>
+								</div>
+							</div>
+							<div class="more-results">
+								<a href="#" class="link-simple">Все сервисные центры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row row_footer">
+					<div class="col-lg-2">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+					</div>
+					<div class="col-lg-2 col_pl">
+						<div class="title-footer">Сервисные центры Минска</div>
+						<ul class="footer__nav">
+							<li><a href="#">Сервисные центры LG</a></li>
+							<li><a href="#">Сервисные центры Apple</a></li>
+							<li><a href="#">Сервисные центры Samsung</a></li>
+							<li><a href="#">Сервисные центры Xiaomi</a></li>
+							<li><a href="#">Сервисные центры Bosch</a></li>
+							<li><a href="#">Сервисные центры HP</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col_pl">
+						<div class="title-footer">о компании</div>
+						<ul class="footer__nav">
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Гарантия</a></li>
+							<li><a href="#">Информация об оплате</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Условия использования</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col_contacts">
+						<div class="title-footer">контакты</div>
+						<p>Москва, Каширское ш., д. 80, к. 1</p>
+						<p>Москва, ул. Талалихина, д. 2/1, к. 6</p>
+						<p>+7 (499) 938-65-07</p>
+						<p>Ежедневно с 6:00 до 23:00</p>
+						<a href="mailto:info@golaika.ru" class="link-swimple">info@golaika.ru</a>
+					</div>
+					<div class="col-lg-4 footer__right">
+						<div class="social-block">
+							<span>Следуйте за нами:</span>
+							<ul class="social-list">
+								<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/ok.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/tw.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/vb.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/wa.svg" alt="alt"></a></li>
+							</ul>
+						</div>
+						<div class="footer__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="footer-bottom__image">
+								<img src="img/footer_img1.svg" alt="alt">
+							</div>
+						</div>
+						<div class="col-lg-2 col_pl">
+							<p>© 2021 tut-remont.by</p>
+						</div>
+						<div class="col-lg-2">
+							<a href="#">Политика персональных данных</a>
+						</div>
+						<div class="col-lg-6">
+							<div class="footer-bottom__image-right">
+								<img src="img/footer_img2.svg" alt="alt">
+							</div>
+							<div class="footer__mob">
+								<img src="img/footer_mob.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<div id="modal-city" class="modal-block">
+		<div class="dropdown-main">
+			<div class="city-link active"><span class="city-link__icon"></span>Ваш город: <span class="city-link__value">Минск</span><span class="arrow-main"></span></div>
+			<ul class="dropdown-main__list">
+				<li class="active"><a href="#">Минск</a></li>
+				<li><a href="#">Гродно</a></li>
+				<li><a href="#">Волковыск</a></li>
+				<li><a href="#">Брацлав</a></li>
+				<li><a href="#">Поставы</a></li>
+				<li><a href="#">Глубокое</a></li>
+				<li><a href="#">Вилейка</a></li>
+				<li><a href="#">Молодечно, </a></li>
+				<li><a href="#">Ошмяны</a></li>
+				<li><a href="#">Воложин</a></li>
+				<li><a href="#">Лида</a></li>
+				<li><a href="#">Щучин</a></li>
+				<li><a href="#">Столбцы</a></li>
+				<li><a href="#">Слоним</a></li>
+				<li><a href="#">Барановичи</a></li>
+				<li><a href="#">Минск</a></li>
+				<li><a href="#">Гродно</a></li>
+				<li><a href="#">Волковыск</a></li>
+				<li><a href="#">Брацлав</a></li>
+				<li><a href="#">Поставы</a></li>
+				<li><a href="#">Глубокое</a></li>
+				<li><a href="#">Вилейка</a></li>
+				<li><a href="#">Молодечно, </a></li>
+				<li><a href="#">Ошмяны</a></li>
+				<li><a href="#">Воложин</a></li>
+				<li><a href="#">Лида</a></li>
+				<li><a href="#">Щучин</a></li>
+				<li><a href="#">Столбцы</a></li>
+				<li><a href="#">Слоним</a></li>
+				<li><a href="#">Барановичи</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-type" class="modal-block">
+		<div class="dropdown-main dropdown-main_type">
+			<div class="title-min">Виды техники</div>
+			<ul class="dropdown-main__list">
+				<li class="active">
+					<a href="#">компьютерная техника</a>
+					<ul style="display: block;">
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Моноблоки</a></li>
+						<li><a href="#">Серверы</a></li>
+						<li><a href="#">Ультрабуки</a></li>
+						<li><a href="#">Нетбуки</a></li>
+						<li><a href="#">Неттопы</a></li>
+						<li><a href="#">Ремонт плат промышленной электроники</a></li>
+						<li><a href="#">Ремонт плат</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Крупная бытовая техника</a>
+					<ul>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Моноблоки</a></li>
+						<li><a href="#">Серверы</a></li>
+						<li><a href="#">Ультрабуки</a></li>
+						<li><a href="#">Нетбуки</a></li>
+						<li><a href="#">Неттопы</a></li>
+						<li><a href="#">Ремонт плат промышленной электроники</a></li>
+						<li><a href="#">Ремонт плат</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">мелкая  бытовая техника</a>
+					<ul>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Моноблоки</a></li>
+						<li><a href="#">Серверы</a></li>
+						<li><a href="#">Ультрабуки</a></li>
+						<li><a href="#">Нетбуки</a></li>
+						<li><a href="#">Неттопы</a></li>
+						<li><a href="#">Ремонт плат промышленной электроники</a></li>
+						<li><a href="#">Ремонт плат</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">портативная электроника</a>
+					<ul>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Моноблоки</a></li>
+						<li><a href="#">Серверы</a></li>
+						<li><a href="#">Ультрабуки</a></li>
+						<li><a href="#">Нетбуки</a></li>
+						<li><a href="#">Неттопы</a></li>
+						<li><a href="#">Ремонт плат промышленной электроники</a></li>
+						<li><a href="#">Ремонт плат</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"> фото и видео техника</a>
+					<ul>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Моноблоки</a></li>
+						<li><a href="#">Серверы</a></li>
+						<li><a href="#">Ультрабуки</a></li>
+						<li><a href="#">Нетбуки</a></li>
+						<li><a href="#">Неттопы</a></li>
+						<li><a href="#">Ремонт плат промышленной электроники</a></li>
+						<li><a href="#">Ремонт плат</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">техника для красоты</a>
+					<ul>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Моноблоки</a></li>
+						<li><a href="#">Серверы</a></li>
+						<li><a href="#">Ультрабуки</a></li>
+						<li><a href="#">Нетбуки</a></li>
+						<li><a href="#">Неттопы</a></li>
+						<li><a href="#">Ремонт плат промышленной электроники</a></li>
+						<li><a href="#">Ремонт плат</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">климатическая техника</a>
+					<ul>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Моноблоки</a></li>
+						<li><a href="#">Серверы</a></li>
+						<li><a href="#">Ультрабуки</a></li>
+						<li><a href="#">Нетбуки</a></li>
+						<li><a href="#">Неттопы</a></li>
+						<li><a href="#">Ремонт плат промышленной электроники</a></li>
+						<li><a href="#">Ремонт плат</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">электроинструменты</a>
+					<ul>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Компьютеры</a></li>
+						<li><a href="#">Моноблоки</a></li>
+						<li><a href="#">Серверы</a></li>
+						<li><a href="#">Ультрабуки</a></li>
+						<li><a href="#">Нетбуки</a></li>
+						<li><a href="#">Неттопы</a></li>
+						<li><a href="#">Ремонт плат промышленной электроники</a></li>
+						<li><a href="#">Ремонт плат</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-set" class="modal-block">
+		<div class="dropdown-main">
+			<div class="title-middle">Заявка на ремонт</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя*" required="required">
+				</div>
+				<div class="item-form">
+					<input type="text" placeholder="Телефон*" class="input-phone" required="required">
+				</div>
+				<div class="item-form">
+					<select>
+						<option value="1">Выберите технику</option>
+						<option value="1">Выберите технику</option>
+						<option value="1">Выберите технику</option>
+						<option value="1">Выберите технику</option>
+						<option value="1">Выберите технику</option>
+					</select>
+				</div>
+				<div class="item-form">
+					<select>
+						<option value="1">Где чиним?</option>
+						<option value="1">Где чиним?</option>
+						<option value="1">Где чиним?</option>
+						<option value="1">Где чиним?</option>
+						<option value="1">Где чиним?</option>
+					</select>
+				</div>
+				<div class="descr-form">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet </div>
+				<button class="btn-main btn-main_paper"><span class="icon-btn"></span>Создать заявку на ремонт</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-add" class="modal-block">
+		<div class="dropdown-main">
+			<div class="title-middle">Профиль владельца</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя*" required="required">
+				</div>
+				<div class="item-form">
+					<input type="email" placeholder="Электронная почта*" required="required">
+				</div>
+				<div class="item-form">
+					<input type="password" placeholder="Пароль">
+				</div>
+				<div class="item-form">
+					<input type="password" placeholder="Повторите пароль">
+				</div>
+				<div class="descr-form">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet </div>
+				<button class="btn-main btn-main_arrow">Следующий шаг<span class="icon-btn"></span></button>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-ask" class="modal-block">
+		<div class="block-form">
+			<div class="title-middle">Задайте нам свой вопрос</div>
+			<p>Заполните форму и мы вам ответим <br>в течении 30 минут</p>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя" required="required">
+				</div>
+				<div class="item-form">
+					<input type="text" placeholder="Телефон" class="input-phone" required="required">
+				</div>
+				<div class="item-form">
+					<textarea placeholder="Вопрос" required="required"></textarea>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required="required" checked />
+						<span>Согласен на обработку персональных данных</span>
+					</label>
+				</div>
+				<div class="block-form__bottom">
+					<button class="btn-main btn-main_chat"><span class="icon-btn"></span>Найти сервисный центр</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.2"></script>
+<script>
+	function initMap() {
+		var mapOptions = {
+			zoom: 11,
+			scrollwheel: false,
+			mapTypeControl: false,
+			fullscreenControl: false,
+			streetViewControl: false,
+			center: new google.maps.LatLng(55.689773, 37.515320),
+		};
+		var icon1 = "img/pin2.svg";
+		var mapElement = document.getElementById('map-result');
+		var map = new google.maps.Map(mapElement, mapOptions);
+		/*leeds*/
+		var marker1 = new google.maps.Marker({
+			draggable: true,
+			raiseOnDrag: false,
+			icon: icon1,
+			map: map,
+			position:new google.maps.LatLng(55.689773, 37.515320)
+		});
+
+		var marker2 = new google.maps.Marker({
+			draggable: true,
+			raiseOnDrag: false,
+			icon: icon1,
+			title: "Uluru (Ayers Rock)",
+			map: map,
+			position:new google.maps.LatLng(55.70480697124818, 37.59798224197645)
+		});
+
+		var marker3 = new google.maps.Marker({
+			draggable: true,
+			raiseOnDrag: false,
+			title: "Uluru (Ayers Rock)",
+			icon: icon1,
+			map: map,
+			position:new google.maps.LatLng(55.67977222879328, 37.594244196453275)
+		});
+
+		var marker4 = new google.maps.Marker({
+			draggable: true,
+			raiseOnDrag: false,
+			icon: icon1,
+			title: "Uluru (Ayers Rock)",
+			map: map,
+			position:new google.maps.LatLng(55.66723533446425, 37.40893394339811)
+		});
+
+		const infowindow1 = new google.maps.InfoWindow({
+			content: '<div class="content-map"><div class="content-map__image"><div><img src="img/mp1.jpg" alt="alt"></div></div><div class="content-map__wrap"><a href="#" class="title-min">“Хороший сервис”</a><div class="rating-wrap"><div class="rating rating_5"><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div></div><div>4,7</div></div></div></div>',
+		});
+		infowindow1.open({
+			anchor: marker1,
+		});
+
+		const infowindow2 = new google.maps.InfoWindow({
+			content: '<div class="content-map"><div class="content-map__image"><div><img src="img/mp2.jpg" alt="alt"></div></div><div class="content-map__wrap"><a href="#" class="title-min">“Хороший сервис”</a><div class="rating-wrap"><div class="rating rating_5"><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div></div><div>4,7</div></div></div></div>',
+		});
+		infowindow2.open({
+			anchor: marker2,
+		});
+
+		const infowindow3 = new google.maps.InfoWindow({
+			content: '<div class="content-map"><div class="content-map__image"><div><img src="img/mp3.jpg" alt="alt"></div></div><div class="content-map__wrap"><a href="#" class="title-min">“Хороший сервис”</a><div class="rating-wrap"><div class="rating rating_5"><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div></div><div>4,7</div></div></div></div>',
+		});
+		infowindow3.open({
+			anchor: marker3,
+		});
+
+		const infowindow4 = new google.maps.InfoWindow({
+			content: '<div class="content-map"><div class="content-map__image"><div><img src="img/mp4.jpg" alt="alt"></div></div><div class="content-map__wrap"><a href="#" class="title-min">“Хороший сервис”</a><div class="rating-wrap"><div class="rating rating_5"><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div></div><div>4,7</div></div></div></div>',
+		});
+		infowindow4.open({
+			anchor: marker4,
+		});
+
+
+
+		$( window ).load(function() {
+			$(".content-map").click(function() {
+				$(this).toggleClass("active");
+			});
+		});
+		
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd-2jWpCxwGuVZ0vb0bOCjEcG2VlQhHsA&callback=initMap"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
