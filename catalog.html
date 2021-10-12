@@ -1098,28 +1098,27 @@
 			draggable: true,
 			raiseOnDrag: false,
 			icon: icon1,
-			title: "Uluru (Ayers Rock)",
 			map: map,
-			position:new google.maps.LatLng(55.70480697124818, 37.59798224197645)
+			position:new google.maps.LatLng(55.79758151441577, 37.50542912772009)
 		});
 
 		var marker3 = new google.maps.Marker({
 			draggable: true,
 			raiseOnDrag: false,
-			title: "Uluru (Ayers Rock)",
 			icon: icon1,
 			map: map,
-			position:new google.maps.LatLng(55.67977222879328, 37.594244196453275)
+			position:new google.maps.LatLng(55.63488727585413, 37.46851273748576)
 		});
 
 		var marker4 = new google.maps.Marker({
 			draggable: true,
 			raiseOnDrag: false,
 			icon: icon1,
-			title: "Uluru (Ayers Rock)",
 			map: map,
 			position:new google.maps.LatLng(55.66723533446425, 37.40893394339811)
 		});
+
+
 
 		const infowindow1 = new google.maps.InfoWindow({
 			content: '<div class="content-map"><div class="content-map__image"><div><img src="img/mp1.jpg" alt="alt"></div></div><div class="content-map__wrap"><a href="#" class="title-min">“Хороший сервис”</a><div class="rating-wrap"><div class="rating rating_5"><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div></div><div>4,7</div></div></div></div>',
@@ -1153,6 +1152,7 @@
 
 		$( window ).load(function() {
 			$(".content-map").click(function() {
+				$(".content-map").not(this).removeClass("active");
 				$(this).toggleClass("active");
 			});
 		});
