@@ -16,12 +16,24 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("default").addClass("fixed");
 } else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
 	$menu.removeClass("fixed").addClass("default");
-}
+
 
 	//плавный скролл
-	$(".sidebar-nav li a, .btn-main_scroll").mPageScroll2id({
-		offset: 30
+	$(".sidebar-nav li a, .btn-main_scroll").mPageScroll2id({	
+		offset: 50
 	});
+
+	}
+ $(".btn-main_review").click(function() {
+		$(".card-main_review").fadeIn(0);
+	});
+
+	 if ($(window).width() < 992) {
+     $(".card-main__title").click(function() {
+		$(this).toggleClass("active");
+		$(this).siblings(".card-main__content").slideToggle(200);
+	});
+    }
 
 
 	//кнопка sandwich
