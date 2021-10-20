@@ -63,7 +63,7 @@
     	max-width: 650px;
     }
     .block-form {
-        padding: 68px 40px;
+        padding: 40px;
     }
     .footer {
         font-size: 13px;
@@ -91,6 +91,7 @@
 .consultation-block {
     padding: 50px 40px;
 }
+.quiz-block h1,
 .quiz-block .title-section {
     font-size: 32px;
 }
@@ -115,6 +116,7 @@
 .card-main {
     padding: 25px;
 }
+.card-main__top h1,
 .card-main__top .title-section {
     font-size: 32px;
 }
@@ -135,6 +137,14 @@
 }
 .sidebar-nav a {
     padding: 16px 10px;
+    }
+    h1,
+    .title-section {
+    font-size: 31px;
+    line-height: 41px;
+}
+.item-question__head {
+    padding: 26px 25px;
     }
 }
 @media only screen and (max-width : 1500px) {
@@ -291,9 +301,11 @@
 .quiz {
     padding: 30px 20px;
 }
+.quiz-block h1,
 .quiz-block .title-section {
     font-size: 28px;
 }
+.card-main__top h1,
 .card-main__top .title-section {
     font-size: 28px;
 }
@@ -302,6 +314,7 @@
     height: 80px;
     margin-right: 15px;
 }
+h1,
 .title-section {
     font-size: 32px;
 }
@@ -393,6 +406,7 @@
 .item-location {
     font-size: 14px;
 }
+h1,
 .title-section {
     font-size: 32px;
     line-height: 42px;
@@ -410,9 +424,11 @@
 .item-advantage .title-middle {
     font-size: 15px;
 }
+.quiz-block h1,
 .quiz-block .title-section {
     font-size: 25px;
 }
+.card-main__top h1,
 .card-main__top .title-section {
     font-size: 23px;
 }
@@ -460,6 +476,7 @@
         font-size: 16px;
         line-height: 24px;
     }
+    h1,
     .title-section {
         font-size: 31px;
         line-height: 41px;
@@ -551,6 +568,7 @@
         padding: 31px 18px;
         padding-bottom: 27px;
     }
+    .quiz-block h1,
     .quiz-block .title-section {
         font-size: 21px;
     }
@@ -567,6 +585,7 @@
     .sidebar-nav a {
         padding: 12px 20px;
     }
+    .card-main__top h1,
     .card-main__top .title-section {
         font-size: 26px;
     }
@@ -764,6 +783,7 @@
     .slider-services .slick-next {
         right: -60px;
     }
+    h1,
     .title-section {
         font-size: 24px;
         line-height: 30px;
@@ -844,6 +864,7 @@
     .question  .btn-main {
         width: 100%;
     }
+    .reviews h1,
     .reviews .title-section {
         margin-bottom: 10px;
     }
@@ -1089,6 +1110,7 @@
         font-size: 14px;
         padding-bottom: 20px;
     }
+    .categories h1,
     .categories .title-section {
         text-align: left;
     }
@@ -1134,6 +1156,7 @@
         border-radius: 0;
         margin-top: 30px;
     }
+    .categories h1,
     .categories .title-section {
         text-align: center;
     }
@@ -1392,6 +1415,7 @@
     margin-top: 50px;
     flex-direction: column-reverse;
 }
+.quiz-block h1,
 .quiz-block .title-section {
     font-size: 24px;
     text-align: left;
@@ -1448,6 +1472,7 @@
 .breadcrumbs a {
     font-size: 14px;
 }
+h1.title-section_mob, 
 .title-section.title-section_mob {
     text-align: left;
 }
@@ -1468,6 +1493,7 @@
 .card-main .rating-wrap {
     justify-content: center;
 }
+.card-main__top h1,
 .card-main__top .title-section {
     font-size: 24px;
     line-height: 30px;
@@ -1526,6 +1552,7 @@
 .item-sidebar_nav {
     display: none !important;
 }
+.card-main__title h1,
 .card-main__title .title-section {
     font-size: 16px;
     line-height: 19px;
@@ -1564,7 +1591,7 @@
 .card-main .list-tags {
     margin-right: -17px;
 }
-.card-main .row_service > div:nth-child(n+8) .line-service {
+.card-main .row_service > div:nth-child(n+8) {
     display: none;
 }
 .card-main .btn-main {
@@ -1653,6 +1680,7 @@
         color: #fff;
             background-color: #5B8B6D;
      }
+     .card-main_review h1,
      .card-main_review .title-section {
         text-align: left;
      }
@@ -1692,6 +1720,10 @@
 .card-main_review .title-middle:first-of-type {
     padding-top: 20px;
     font-weight: 600;
+}
+.item-sidebar .list-unit a {
+    font-size: 12px;
+    padding: 0 25px;
 }
 }
 

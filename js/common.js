@@ -16,23 +16,23 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("default").addClass("fixed");
 } else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
 	$menu.removeClass("fixed").addClass("default");
-	}
+}
 
 	//плавный скролл
 	$(".sidebar-nav li a, .btn-main_scroll").mPageScroll2id({	
 		offset: 50
 	});
 
- $(".btn-main_review").click(function() {
+	$(".btn-main_review").click(function() {
 		$(".card-main_review").fadeIn(0);
 	});
 
-	 if ($(window).width() < 992) {
-     $(".card-main__title").click(function() {
-		$(this).toggleClass("active");
-		$(this).siblings(".card-main__content").slideToggle(200);
-	});
-    }
+	if ($(window).width() < 992) {
+		$(".card-main__title").click(function() {
+			$(this).toggleClass("active");
+			$(this).siblings(".card-main__content").slideToggle(200);
+		});
+	}
 
 
 	//кнопка sandwich
@@ -56,8 +56,113 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".moble-search").fadeToggle(200);
 	});
 
+	$(".link-map").click(function(e) {
+		e.preventDefault();
+		if ($("#map-sidebar").is(":hidden")) {
+			$(this).html("Скрыть");
+		} else {
+			
+			$(this).html("Показать на карте");
+		}
+		$("#map-sidebar").fadeToggle(200);
+	});
+
+	$(".more-types a").click(function(e) {
+		e.preventDefault();
+		if ($(this).parent().parent().siblings(".list-unit").find("li:nth-child(n+9)").is(":hidden")) {
+			$(this).html("Скрыть");
+		} else {
+			
+			$(this).html("Показать еще");
+		}
+		$(this).parent().parent().siblings(".list-unit").find("li:nth-child(n+9)").slideToggle(200);
+		
+	});
+
+
+$(".more-results a").click(function(e) {
+		e.preventDefault();
+		if ($(this).parent().parent().parent().find(".wrap-results > div:nth-child(n+11)").is(":hidden")) {
+			$(this).html("Скрыть");
+		} else {
+			
+			$(this).html("Все сервисные центры");
+		}
+		$(this).parent().parent().parent().find(".wrap-results > div:nth-child(n+11)").slideToggle(200);
+		
+	});
+
+$(".more-button_results a").click(function(e) {
+		e.preventDefault();
+		if ($(this).parent().parent().parent().find(".wrap-results > div:nth-child(n+11)").is(":hidden")) {
+			$(this).html("Скрыть");
+		} else {
+			
+			$(this).html("Показать еще");
+		}
+		$(this).parent().parent().parent().find(".wrap-results > div:nth-child(n+11)").slideToggle(200);
+		
+	});
+
+$(".more-button_services a").click(function(e) {
+		e.preventDefault();
+		if ($(this).parent().parent().parent().find(".row_service > div:nth-child(n+8)").is(":hidden")) {
+			$(this).html("Скрыть");
+		} else {
+			
+			$(this).html("Показать еще");
+		}
+		$(this).parent().parent().parent().find(".row_service > div:nth-child(n+8)").slideToggle(200);
+		
+	});
+
+$(".more-button_manufacturers a").click(function(e) {
+		e.preventDefault();
+		if ($(this).parent().parent().parent().find(".row_manufacturers > div:nth-child(n+7)").is(":hidden")) {
+			$(this).html("Скрыть");
+		} else {
+			
+			$(this).html("Показать еще");
+		}
+		$(this).parent().parent().parent().find(".row_manufacturers > div:nth-child(n+7)").slideToggle(200);
+		
+	});
+
+$(".more-button_categories a").click(function(e) {
+		e.preventDefault();
+		if ($(".row_categories > div:nth-child(n+5)").is(":hidden")) {
+			$(this).html("Скрыть");
+		} else {
+			
+			$(this).html("Показать еще");
+		}
+		$(".row_categories > div:nth-child(n+5)").slideToggle(200);
+		
+	});
+
+
+    
+
+    $('.unit__content').each(function(){
+    	var th = $(this);
+ th.find(".search-unit input").keyup(function(){
+    _this = this;
+    
+    $.each(th.find(".list-unit li"), function() {
+        if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) {
+            $(this).hide();
+        } else {
+            $(this).show();                
+}
+     });
+ });
+});
+
+
 	$(".dropdown-main_type .dropdown-main__list > li > a").click(function(e) {
 		e.preventDefault();
+		$(this).parent().siblings("li").removeClass("active");
+		$(this).parent().siblings("li").find("ul").slideUp(200);
 		$(this).parent().toggleClass("active");
 		$(this).siblings("ul").slideToggle(200);
 	});
@@ -81,12 +186,12 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 
-  /*input file*/
-  $("input[type='file']").change(function(){
-    var filename_text = $(this).parent().siblings(".name-upload");
-    var filename = $(this).val().replace(/.*\\/, "");
-    filename_text.append("<div>" + filename + "</div>");
-  });
+	/*input file*/
+	$("input[type='file']").change(function(){
+		var filename_text = $(this).parent().siblings(".name-upload");
+		var filename = $(this).val().replace(/.*\\/, "");
+		filename_text.append("<div>" + filename + "</div>");
+	});
 
 
 	$(".unit__head").click(function(e) {
@@ -101,7 +206,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).parent().parent().parent().find(".card-review_answer").slideToggle(200);
 	});
 
-	$(".rating__item").click(function() {
+	$(".ratting-estimate .rating__item").click(function() {
 		$(this).parent().removeClass("rating_1");
 		$(this).parent().removeClass("rating_2");
 		$(this).parent().removeClass("rating_3");
@@ -239,11 +344,22 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 	});
 
-		var w = 0;
+$('.tab-quiz').each(function(index, element){
+  $(this).attr('data-block', index);  
+   index += 1;
+  $('.progressbar-numbers').append('<div class="progressbar-numbers__item" >'+index+'</div>');
+  $(".progressbar-numbers__item:first-child").addClass("active");
+});
+
+
+	var w = 0;
+	var s = $('.tab-quiz').length-1;
+	var b = 100 / s;
+
 
 	$(".btn-main_next").click(function(e) {
 		e.preventDefault();
-		w = w + 25;
+		w = w + b;
 		$(".quiz-progressbar__value").css("width", w + "%");
 		$(".progressbar-numbers__item.active").next().addClass("active");
 		$(this).parent().parent().fadeOut(0);
@@ -252,7 +368,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	$(".btn-main_prev").click(function(e) {
 		e.preventDefault();
-		w = w - 25;
+		w = w - b;
 		$(".quiz-progressbar__value").css("width", w + "%");
 		$(".progressbar-numbers__item.active").last().removeClass("active");
 		$(this).parent().parent().fadeOut(0);
