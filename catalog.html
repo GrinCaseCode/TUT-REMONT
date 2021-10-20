@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.2" />
-	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+	<link rel="stylesheet" href="css/main.css?ver=1.12" />
+	<link rel="stylesheet" href="css/media.css?ver=1.12" />
 </head>
 <body>
 
@@ -92,7 +92,8 @@
 									<p><a href="mailto:info@apple-service.care">info@apple-service.care</a></p>
 									<p><a href="tel:+74957894771">+7 (495) 789-47-71</a></p>
 									<p><a href="mailto:horoshiyservice.com">horoshiyservice.com</a></p>
-									<p>Кулакова, 20 ст1а, Технопарк <br>Орбита, 406 офис; 4 этаж <br><a href="#">Показать на карте</a></p>
+									<p>Кулакова, 20 ст1а, Технопарк <br>Орбита, 406 офис; 4 этаж <br><a href="#" class="link-map">Показать на карте</a></p>
+									<div id="map-sidebar"></div>
 									<p><a href="#">Работает сегодня до 23:00</a></p>
 									<a href="#" class="btn-main"><img src="img/ic_hand.svg" alt="alt">Онлайн заявка</a>
 								</div>
@@ -103,6 +104,13 @@
 							<div class="item-sidebar__content">
 								<ul class="list-unit">
 									<li class="active"><a href="#">компьютерная техника</a></li>
+									<li><a href="#">Крупная бытовая техника</a></li>
+									<li><a href="#">мелкая  бытовая техника</a></li>
+									<li><a href="#">портативная электроника</a></li>
+									<li><a href="#"> фото и видео техника</a></li>
+									<li><a href="#">техника для красоты</a></li>
+									<li><a href="#">климатическая техника</a></li>
+									<li><a href="#">электроинструменты</a></li>
 									<li><a href="#">Крупная бытовая техника</a></li>
 									<li><a href="#">мелкая  бытовая техника</a></li>
 									<li><a href="#">портативная электроника</a></li>
@@ -122,6 +130,14 @@
 								<ul class="list-unit">
 									<li><a href="#">Acer</a></li>
 									<li class="active"><a href="#">Apple iMac</a></li>
+									<li><a href="#">Asus</a></li>
+									<li><a href="#">Dell</a></li>
+									<li><a href="#">Fujitsu</a></li>
+									<li><a href="#">HP</a></li>
+									<li><a href="#">Asus</a></li>
+									<li><a href="#">Dell</a></li>
+									<li><a href="#">Fujitsu</a></li>
+									<li><a href="#">HP</a></li>
 									<li><a href="#">Asus</a></li>
 									<li><a href="#">Dell</a></li>
 									<li><a href="#">Fujitsu</a></li>
@@ -205,7 +221,7 @@
 						</div>
 					</div>
 					<div class="col-lg-9 flex_big">
-						<div class="title-section">Ремонт и обслуживание техники в Минске</div>
+						<h1>Ремонт и обслуживание техники в Минске</h1>
 						<div class="unit">
 							<div class="unit__head"><div class="title-min">Все виды техникии</div><div class="arrow-main"></div></div>
 							<div class="unit__content">
@@ -260,6 +276,10 @@
 									<ul class="list-unit">
 										<li><a href="#">Acer</a></li>
 										<li class="active"><a href="#">Apple iMac</a></li>
+										<li><a href="#">Asus</a></li>
+										<li><a href="#">Dell</a></li>
+										<li><a href="#">Fujitsu</a></li>
+										<li><a href="#">HP</a></li>
 										<li><a href="#">Asus</a></li>
 										<li><a href="#">Dell</a></li>
 										<li><a href="#">Fujitsu</a></li>
@@ -473,11 +493,11 @@
 								</a>
 							</div>
 						</div>
-						<div class="more-button">
+						<div class="more-button more-button_categories">
 							<a href="#" class="btn-main btn-main_simple">Показать еще</a>
 						</div>
 						<div class="consultation-block consultation-block_search">
-							<div class="title-section">Поиск сервисного центра поблизости</div>
+							<h2 class="title-section">Поиск сервисного центра поблизости</h2>
 							<div class="descr-section">Мы стараемся показывать вам сервисы, которые находятся ближе всего к вам. <br>Это поможет в скорости получения услуги</div>
 							<form>
 								<div class="wrap-form">
@@ -512,208 +532,360 @@
 							<div class="row">
 								<div class="col-lg-7">
 									<div class="wrap-results">
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result1.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result1.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result2.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result2.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_4">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result3.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result3.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result4.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result4.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_4">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result5.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result5.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result1.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result1.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result2.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result2.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result3.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result3.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result4.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result4.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 										</div>
-										<div class="item-result">
-											<a href="#" class="item-result__image">
-												<img src="img/itm_result5.jpg" alt="alt">
-											</a>
-											<div class="item-result__content">
-												<a href="#" class="title-min">“Хороший сервис”</a>
-												<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
-												<div class="rating-wrap">
-													<div class="rating rating_5">
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
-														<div class="rating__item"><i class="fas fa-star"></i></div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result5.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
 													</div>
-													<div>4,7</div>
 												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
 											</div>
-											<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+										</div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result3.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
+													</div>
+												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+											</div>
+										</div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result4.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
+													</div>
+												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+											</div>
+										</div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result5.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
+													</div>
+												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+											</div>
+										</div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result3.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
+													</div>
+												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+											</div>
+										</div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result4.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
+													</div>
+												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+											</div>
+										</div>
+										<div>
+											<div class="item-result">
+												<a href="#" class="item-result__image">
+													<img src="img/itm_result5.jpg" alt="alt">
+												</a>
+												<div class="item-result__content">
+													<a href="#" class="title-min">“Хороший сервис”</a>
+													<div class="location-result"><img src="img/ic_loc.svg" alt="alt">Кулакова, 20 ст1а, Технопарк Орбита...</div>
+													<div class="rating-wrap">
+														<div class="rating rating_5">
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+															<div class="rating__item"><i class="fas fa-star"></i></div>
+														</div>
+														<div>4,7</div>
+													</div>
+												</div>
+												<a href="#" class="btn-main"><img src="img/ic_plus2.svg" alt="alt">Онлайн заявка</a>
+											</div>
 										</div>
 									</div>
-									<div class="more-button">
+									<div class="more-button more-button_results">
 										<a href="#" class="btn-main btn-main_simple">Показать еще</a>
 									</div>
 								</div>
@@ -857,9 +1029,9 @@
 		<div class="dropdown-main dropdown-main_type">
 			<div class="title-min">Виды техники</div>
 			<ul class="dropdown-main__list">
-				<li class="active">
+				<li>
 					<a href="#">компьютерная техника</a>
-					<ul style="display: block;">
+					<ul>
 						<li><a href="#">Ноутбуки</a></li>
 						<li><a href="#">Компьютеры</a></li>
 						<li><a href="#">Моноблоки</a></li>
@@ -1071,7 +1243,7 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.2"></script>
+<script src="js/common.js?ver=1.12"></script>
 <script>
 	function initMap() {
 		var mapOptions = {
@@ -1155,6 +1327,41 @@
 				$(".content-map").not(this).removeClass("active");
 				$(this).toggleClass("active");
 			});
+		});
+
+		 initMap2();
+		
+	}
+
+	function initMap2() {
+		var mapOptions = {
+			zoom: 12,
+			scrollwheel: false,
+			mapTypeControl: false,
+			fullscreenControl: false,
+			streetViewControl: false,
+			center: new google.maps.LatLng(55.689773, 37.515320),
+		};
+		var icon1 = "img/pin2.svg";
+		var mapElement = document.getElementById('map-sidebar');
+		var map = new google.maps.Map(mapElement, mapOptions);
+		/*leeds*/
+		var marker = new google.maps.Marker({
+			draggable: true,
+			raiseOnDrag: false,
+			icon: icon1,
+			map: map,
+			optimized: false,
+			zIndex:99999999,
+			position:new google.maps.LatLng(55.689773, 37.515320)
+		});
+
+		const infowindow = new google.maps.InfoWindow({
+			content: '<div class="content-map"><div class="content-map__image"><div><img src="img/mp1.jpg" alt="alt"></div></div><div class="content-map__wrap"><a href="#" class="title-min">“Хороший сервис”</a><div class="rating-wrap"><div class="rating rating_5"><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div></div><div>4,7</div></div></div></div>',
+			zIndex: 10
+		});
+		infowindow.open({
+			anchor: marker,
 		});
 		
 	}

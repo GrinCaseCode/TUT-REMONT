@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.9" />
-	<link rel="stylesheet" href="css/media.css?ver=1.9" />
+	<link rel="stylesheet" href="css/main.css?ver=1.12" />
+	<link rel="stylesheet" href="css/media.css?ver=1.12" />
 </head>
 <body>
 
@@ -94,7 +94,8 @@
 									<p><a href="mailto:info@apple-service.care">info@apple-service.care</a></p>
 									<p><a href="tel:+74957894771">+7 (495) 789-47-71</a></p>
 									<p><a href="mailto:horoshiyservice.com">horoshiyservice.com</a></p>
-									<p>Кулакова, 20 ст1а, Технопарк <br>Орбита, 406 офис; 4 этаж <br><a href="#">Показать на карте</a></p>
+									<p>Кулакова, 20 ст1а, Технопарк <br>Орбита, 406 офис; 4 этаж <br><a href="#" class="link-map">Показать на карте</a></p>
+									<div id="map-sidebar"></div>
 									<p><a href="#">Работает сегодня до 23:00</a></p>
 									<a href="#" class="btn-main"><img src="img/ic_hand.svg" alt="alt">Онлайн заявка</a>
 								</div>
@@ -124,7 +125,7 @@
 									<div class="card-main__image">
 										<img src="img/card1.jpg" alt="alt">
 									</div>
-									<div class="title-section">Сервисный центр “Хороший сервис”</div>
+									<h1>Сервисный центр “Хороший сервис”</h1>
 									<div class="rating-wrap">
 										<div class="rating rating_5">
 											<div class="rating__item"><i class="fas fa-star"></i></div>
@@ -156,7 +157,7 @@
 								</div>
 							</div>
 							<div class="card-main" id="card_sect1">
-								<div class="card-main__title"><img src="img/ic_cblock1.svg" alt="alt"><div class="title-section">Сервисный центр “Хороший сервис”</div><div class="arrow-main"></div></div>
+								<div class="card-main__title"><img src="img/ic_cblock1.svg" alt="alt"><h2 class="title-section">Сервисный центр “Хороший сервис”</h2><div class="arrow-main"></div></div>
 								<div class="card-main__content">
 									<div class="card-main__text">
 										<p>Официальный сервисный центр Apple. Занимается восстановлением и ремонтом техники Apple с 2012 года. Мы идём в ногу со временем, ценим и экономим время и нервы наших клиентов, поэтому обучили и подготовили наших сервисных инженеров к работе на территории клиента. Наше основное и перспективное направление это - выездной ремонт. Мы осуществляем модульный ремонт прямо на глазах клиента и предоставляем гарантию до двух лет. Мы работаем в среднем ценовом сегменте, а именно не завышаем стоимость запчастей и не экономим на ремкомплектах, комплектующих и прочих расходных материалах.</p>
@@ -169,7 +170,7 @@
 								</div>
 							</div>
 							<div class="card-main" id="card_sect2">
-								<div class="card-main__title"><img src="img/ic_cblock2.svg" alt="alt"><div class="title-section">Услуги и цены</div><div class="arrow-main"></div></div>
+								<div class="card-main__title"><img src="img/ic_cblock2.svg" alt="alt"><h2 class="title-section">Услуги и цены</h2><div class="arrow-main"></div></div>
 								<div class="card-main__content">
 									<div class="unit">
 										<div class="unit__head"><div class="title-min">Все услуги</div><div class="arrow-main"></div></div>
@@ -242,13 +243,13 @@
 											<div class="line-service">Чистка <div class="line-service__value">500 руб.</div></div>
 										</div>
 									</div>
-									<div class="more-button">
+									<div class="more-button more-button_services">
 										<a href="#" class="btn-main btn-main_simple">Показать еще</a>
 									</div>
 								</div>
 							</div>
 							<div class="card-main" id="card_sect3">
-								<div class="card-main__title"><img src="img/ic_cblock3.svg" alt="alt"><div class="title-section">Виды техники</div><div class="arrow-main"></div></div>
+								<div class="card-main__title"><img src="img/ic_cblock3.svg" alt="alt"><h2 class="title-section">Виды техники</h2><div class="arrow-main"></div></div>
 								<div class="card-main__content">
 									<div class="unit">
 										<div class="unit__head"><div class="title-min">Все виды техникии</div><div class="arrow-main"></div></div>
@@ -321,13 +322,13 @@
 											<div class="line-service">Чистка <div class="line-service__value">500 руб.</div></div>
 										</div>
 									</div>
-									<div class="more-button">
+									<div class="more-button more-button_services">
 										<a href="#" class="btn-main btn-main_simple">Показать еще</a>
 									</div>
 								</div>
 							</div>
 							<div class="card-main" id="card_sect4">
-								<div class="card-main__title"><img src="img/ic_cblock4.svg" alt="alt"><div class="title-section">Бренды</div><div class="arrow-main"></div></div>
+								<div class="card-main__title"><img src="img/ic_cblock4.svg" alt="alt"><h2 class="title-section">Бренды</h2><div class="arrow-main"></div></div>
 								<div class="card-main__content">
 									<div class="unit">
 										<div class="unit__head"><div class="title-min">Все бренды</div><div class="arrow-main"></div></div>
@@ -419,14 +420,34 @@
 												<img src="img/manufacturer6.png" alt="alt">
 											</a>
 										</div>
+										<div class="col-lg-2 col-md-4 col-6">
+											<a href="#" class="item-manufacturer">
+												<img src="img/manufacturer1.png" alt="alt">
+											</a>
+										</div>
+										<div class="col-lg-2 col-md-4 col-6">
+											<a href="#" class="item-manufacturer">
+												<img src="img/manufacturer2.png" alt="alt">
+											</a>
+										</div>
+										<div class="col-lg-2 col-md-4 col-6">
+											<a href="#" class="item-manufacturer">
+												<img src="img/manufacturer3.png" alt="alt">
+											</a>
+										</div>
+										<div class="col-lg-2 col-md-4 col-6">
+											<a href="#" class="item-manufacturer">
+												<img src="img/manufacturer4.png" alt="alt">
+											</a>
+										</div>
 									</div>
-									<div class="more-button">
+									<div class="more-button more-button_manufacturers">
 										<a href="#" class="btn-main btn-main_simple">Показать еще</a>
 									</div>
 								</div>
 							</div>
 							<div class="card-main" id="card_sect5">
-								<div class="card-main__title"><img src="img/ic_cblock5.svg" alt="alt"><div class="title-section">Отзывы</div><a href="#card_sect6" class="btn-main btn-main_scroll"><img src="img/ic_pen.svg" alt="alt">Написать отзыв</a><div class="arrow-main"></div></div>
+								<div class="card-main__title"><img src="img/ic_cblock5.svg" alt="alt"><h2 class="title-section">Отзывы</h2><a href="#card_sect6" class="btn-main btn-main_scroll"><img src="img/ic_pen.svg" alt="alt">Написать отзыв</a><div class="arrow-main"></div></div>
 								<div class="card-main__content">
 									<div class="card-main__estimate">
 										<div class="title-middle">Оценки</div>
@@ -476,7 +497,9 @@
 												<div>Оценил(а) на 5</div>
 											</div>
 										</div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra</p>
+										<blockquote>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra</p>
+										</blockquote>
 										<div class="card-review__bottom">
 											<a href="#" class="card-review__estimate">Нравится <img src="img/like.svg" alt="alt"></a>
 											<a href="#" class="card-review__estimate">Нравится <img src="img/dislike.svg" alt="alt"></a>
@@ -522,7 +545,9 @@
 												<div>Оценил(а) на 5</div>
 											</div>
 										</div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra</p>
+										<blockquote>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra</p>
+										</blockquote>
 										<div class="card-review__bottom">
 											<a href="#" class="card-review__estimate">Нравится <img src="img/like.svg" alt="alt"></a>
 											<a href="#" class="card-review__estimate">Нравится <img src="img/dislike.svg" alt="alt"></a>
@@ -552,7 +577,9 @@
 												<div>Оценил(а) на 5</div>
 											</div>
 										</div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra</p>
+										<blockquote>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra</p>
+										</blockquote>
 										<div class="card-review__bottom">
 											<a href="#" class="card-review__estimate">Нравится <img src="img/like.svg" alt="alt"></a>
 											<a href="#" class="card-review__estimate">Нравится <img src="img/dislike.svg" alt="alt"></a>
@@ -567,68 +594,68 @@
 							<div class="card-main card-main_review" id="card_sect6">
 								<div class="title-section">Добавить отзыв</div>
 								<form>
-										<div class="title-middle">Оцените сервисный центр</div>
-										<div class="ratting-estimate">
-											<div class="title-small">Обслуживание:</div>
-											<div class="rating rating_5">
-												<div class="rating__item" data-rating="1"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="2"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="3"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="4"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="5"><i class="fas fa-star"></i></div>
-											</div>
-											<div class="ratting-estimate__value">Ваша оценка 5 из 5</div>
+									<div class="title-middle">Оцените сервисный центр</div>
+									<div class="ratting-estimate">
+										<div class="title-small">Обслуживание:</div>
+										<div class="rating rating_5">
+											<div class="rating__item" data-rating="1"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="2"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="3"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="4"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="5"><i class="fas fa-star"></i></div>
 										</div>
-										<div class="ratting-estimate">
-											<div class="title-small">Цена:</div>
-											<div class="rating rating_4">
-												<div class="rating__item" data-rating="1"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="2"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="3"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="4"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="5"><i class="fas fa-star"></i></div>
-											</div>
-											<div class="ratting-estimate__value">Ваша оценка 4 из 5</div>
+										<div class="ratting-estimate__value">Ваша оценка 5 из 5</div>
+									</div>
+									<div class="ratting-estimate">
+										<div class="title-small">Цена:</div>
+										<div class="rating rating_4">
+											<div class="rating__item" data-rating="1"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="2"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="3"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="4"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="5"><i class="fas fa-star"></i></div>
 										</div>
-										<div class="ratting-estimate">
-											<div class="title-small">Качество:</div>
-											<div class="rating">
-												<div class="rating__item" data-rating="1"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="2"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="3"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="4"><i class="fas fa-star"></i></div>
-												<div class="rating__item" data-rating="5"><i class="fas fa-star"></i></div>
-											</div>
-											<div class="ratting-estimate__value">Оцените нажав на звезды</div>
+										<div class="ratting-estimate__value">Ваша оценка 4 из 5</div>
+									</div>
+									<div class="ratting-estimate">
+										<div class="title-small">Качество:</div>
+										<div class="rating">
+											<div class="rating__item" data-rating="1"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="2"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="3"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="4"><i class="fas fa-star"></i></div>
+											<div class="rating__item" data-rating="5"><i class="fas fa-star"></i></div>
 										</div>
-										<div class="title-middle">Ваш отзыв</div>
-										<div class="item-form">
-											<textarea placeholder="Расскажите о своих впечатлениях"></textarea>
-										</div>
-										<div class="title-middle">Выберите ремонтируемую технику</div>
-										<div class="item-form item-form_select">
-											<select>
-												<option value="1">Все виды техники</option>
-												<option value="1">Все виды техники 2</option>
-												<option value="1">Все виды техники 3</option>
-												<option value="1">Все виды техники 4</option>
-												<option value="1">Все виды техники 5</option>
-											</select>
-										</div>
-										<div class="title-middle">Выберите фото, которым хочете поделиться</div>
-										<div class="descr-photos">Загрузите картинки, не превышающие размер в 10 МБайт (не более 10 шт)</div>
-										<div class="fl_upld">
-											<div class="name-upload"></div>
-											<label class="btn-add"><input type="file" multiple="multiple" name="file"><img src="img/ic_photo.svg" alt="alt">Выберите файл</label>
-										</div>
-										<div class="checkbox">
-											<label>
-												<input type="checkbox" required="required" checked />
-												<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis.</span>
-											</label>
-										</div>
-										<button class="btn-main btn-main_chat"><span class="icon-btn"></span>Отправить отзыв</button>
-									</form>
+										<div class="ratting-estimate__value">Оцените нажав на звезды</div>
+									</div>
+									<div class="title-middle">Ваш отзыв</div>
+									<div class="item-form">
+										<textarea placeholder="Расскажите о своих впечатлениях"></textarea>
+									</div>
+									<div class="title-middle">Выберите ремонтируемую технику</div>
+									<div class="item-form item-form_select">
+										<select>
+											<option value="1">Все виды техники</option>
+											<option value="1">Все виды техники 2</option>
+											<option value="1">Все виды техники 3</option>
+											<option value="1">Все виды техники 4</option>
+											<option value="1">Все виды техники 5</option>
+										</select>
+									</div>
+									<div class="title-middle">Выберите фото, которым хочете поделиться</div>
+									<div class="descr-photos">Загрузите картинки, не превышающие размер в 10 МБайт (не более 10 шт)</div>
+									<div class="fl_upld">
+										<div class="name-upload"></div>
+										<label class="btn-add"><input type="file" multiple="multiple" name="file"><img src="img/ic_photo.svg" alt="alt">Выберите файл</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" required="required" checked />
+											<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis.</span>
+										</label>
+									</div>
+									<button class="btn-main btn-main_chat"><span class="icon-btn"></span>Отправить отзыв</button>
+								</form>
 							</div>
 							<div class="mobile-card-buttons">
 								<a href="#link-ask" class="btn-main btn-main_review btn-main_scroll"><img src="img/ic_pen.svg" alt="alt">Написать отзыв</a>
@@ -767,9 +794,9 @@
 		<div class="dropdown-main dropdown-main_type">
 			<div class="title-min">Виды техники</div>
 			<ul class="dropdown-main__list">
-				<li class="active">
+				<li>
 					<a href="#">компьютерная техника</a>
-					<ul style="display: block;">
+					<ul>
 						<li><a href="#">Ноутбуки</a></li>
 						<li><a href="#">Компьютеры</a></li>
 						<li><a href="#">Моноблоки</a></li>
@@ -981,7 +1008,7 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.9"></script>
+<script src="js/common.js?ver=1.12"></script>
 <script>
 	function initMap() {
 		var mapOptions = {
@@ -1014,18 +1041,52 @@
 			anchor: marker1,
 		});
 
-
-
 		$( window ).load(function() {
 			$(".content-map").click(function() {
 				$(".content-map").not(this).removeClass("active");
 				$(this).toggleClass("active");
 			});
 		});
+
+		initMap2();
+		
+	}
+
+	function initMap2() {
+		var mapOptions = {
+			zoom: 12,
+			scrollwheel: false,
+			mapTypeControl: false,
+			fullscreenControl: false,
+			streetViewControl: false,
+			center: new google.maps.LatLng(55.689773, 37.515320),
+		};
+		var icon1 = "img/pin2.svg";
+		var mapElement = document.getElementById('map-sidebar');
+		var map = new google.maps.Map(mapElement, mapOptions);
+		/*leeds*/
+		var marker = new google.maps.Marker({
+			draggable: true,
+			raiseOnDrag: false,
+			icon: icon1,
+			map: map,
+			optimized: false,
+			zIndex:99999999,
+			position:new google.maps.LatLng(55.689773, 37.515320)
+		});
+
+		const infowindow = new google.maps.InfoWindow({
+			content: '<div class="content-map"><div class="content-map__image"><div><img src="img/mp1.jpg" alt="alt"></div></div><div class="content-map__wrap"><a href="#" class="title-min">“Хороший сервис”</a><div class="rating-wrap"><div class="rating rating_5"><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div><div class="rating__item"><i class="fas fa-star"></i></div></div><div>4,7</div></div></div></div>',
+			zIndex: 10
+		});
+		infowindow.open({
+			anchor: marker,
+		});
 		
 	}
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd-2jWpCxwGuVZ0vb0bOCjEcG2VlQhHsA&callback=initMap"></script>
+
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
