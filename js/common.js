@@ -140,6 +140,18 @@ $(".more-button_categories a").click(function(e) {
 		
 	});
 
+$(".more-button_catalog a").click(function(e) {
+		e.preventDefault();
+		if ($(".item-catalog:nth-child(n+4)").is(":hidden")) {
+			$(this).html("Скрыть");
+		} else {
+			
+			$(this).html("Показать еще");
+		}
+		$(".item-catalog:nth-child(n+4)").slideToggle(200);
+		
+	});
+
 
     
 

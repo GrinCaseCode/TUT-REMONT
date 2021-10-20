@@ -1725,6 +1725,9 @@ h1.title-section_mob,
     font-size: 12px;
     padding: 0 25px;
 }
+.item-catalog:nth-child(n+4) {
+    display: none;
+}
 }
 
 /* Small Devices, Tablets */
